@@ -15,6 +15,16 @@ window.onload = function(){
 }
 //Max number
 function maxNumber(number){return (number <= 30);}
+//Create world
+function createWorld(){
+  var rows = document.querySelector('.rows').value;
+  var columns = document.querySelector('.columns').value;
+  if (maxNumber(rows) == false || maxNumber(columns) == false){
+    alert("Max 30");
+    return false;
+  }
+  createMatrix(rows,columns);
+}
 //Create matrix
 function createMatrix(y,x){
   var e = eval;
@@ -58,4 +68,7 @@ function activeCell(x,y,active){
   printMatrix(matrix);
 }
 //Start game
+function startGame(){
+  active = false; // You cant active cells anymore :(
+}
 
