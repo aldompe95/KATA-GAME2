@@ -1,0 +1,11 @@
+table{
+  border: 1px solid #000;
+  background-color: #000;
+}
+td{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+}
+.active{background-color: #6eff00;}
+.cell{cursor: pointer;}
